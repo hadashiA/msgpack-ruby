@@ -494,7 +494,7 @@ static inline void msgpack_packer_write_bignum_value(msgpack_packer_t* pk, VALUE
 
 static inline void msgpack_packer_write_float_value(msgpack_packer_t* pk, VALUE v)
 {
-    msgpack_packer_write_double(pk, rb_num2dbl(v));
+    msgpack_packer_write_float(pk, rb_num2dbl(v));
 }
 
 void msgpack_packer_write_array_value(msgpack_packer_t* pk, VALUE v);

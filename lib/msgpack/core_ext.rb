@@ -49,7 +49,7 @@ class Float
 
   private
   def to_msgpack_with_packer(packer)
-    packer.write_float self
+    packer.write_float32 self
     packer
   end
 end
